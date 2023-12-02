@@ -25,5 +25,5 @@ $wskaźnik = {{ram + hd \over price} * speed}$
  **Task2**
  - [x] Create two promotional sets containing the sum of the price reduced by 10%
 and information about the devices:
-    - [x] PC + PRINTER
-    - [x] LAPTOP + PRINTER
+    -  PC + PRINTER
+    -  LAPTOP + PRINTER
