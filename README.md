@@ -16,7 +16,7 @@
 ## TODO LIST
 **Task1**
  - [x] For a given model, check whether it is a laptop or a computer
-desktop. Then calculate the "cost-effectiveness ratio," which
+desktop. Then calculate the "cost-effectiveness ratio", which
 is represented by the equation inn the result, add the model name.
 <p align="center">
 $wskaźnik = {{ram + hd \over price} * speed}$
@@ -27,3 +27,10 @@ $wskaźnik = {{ram + hd \over price} * speed}$
 and information about the devices:
     -  PC + PRINTER
     -  LAPTOP + PRINTER
+
+## Implementation
+**Task1**
+ - [x] I decide to round "cost-effectiveness ratio" to two decimal numbers, to avoid long numbers and get better visiualization of results.
+
+ **Task2**
+ - [x] Here I hope that my implementation will be transparent, because I decide to create three independent dataframes, with first, second products and promo price. I belive that this gives better visiualization and user which would like to check results can find very quickly what file presents.
