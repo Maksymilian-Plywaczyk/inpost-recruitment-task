@@ -1,0 +1,64 @@
+code,model,speed,ram,hd,price,screen
+1,HP Pavilion x360,88,8,256,3669,4578
+2,Dell XPS 13,59,1,256,3982,1220
+3,Lenovo ThinkPad X1 Carbon,3,1,512,1348,3030
+4,Asus ROG Strix G15,67,32,1024,4219,1714
+5,Acer Aspire 5,25,1,512,3686,1081
+6,Apple MacBook Pro,43,4,256,2013,4981
+7,Samsung Galaxy Book Flex,76,16,256,1159,2868
+8,Toshiba Satellite,9,1,256,1421,2601
+9,HP Spectre x360,49,4,512,3398,1832
+10,Dell Inspiron 15,97,2,128,2875,3654
+11,Lenovo Yoga C940,92,32,512,3801,1292
+12,Asus ZenBook 14,70,32,1024,3913,4901
+13,Acer Predator Helios 300,7,16,512,2573,2325
+14,Toshiba Tecra X50,78,2,128,2888,1309
+15,HP Envy x360,81,8,128,3311,1209
+16,Dell Alienware m15,63,2,128,1175,1124
+17,Lenovo Legion Y540,93,16,1024,3412,1068
+18,Asus VivoBook S15,98,32,256,3643,2263
+19,Acer Chromebook 14,3,4,128,3009,1214
+20,Toshiba Portege X30,73,4,256,2023,4450
+21,HP Omen 15,98,1,256,2384,3944
+22,Dell Precision 5540,46,2,256,2570
+23,Lenovo Ideapad 330,27,1,256,4097
+24,Asus TUF Gaming A15,72,8,1024,2488,1847
+25,Acer Swift 3,75,1,512,4638,2217
+26,Toshiba Dynabook Tecra A50,54,1,512,4155,1451
+27,HP Elite Dragonfly,23,32,128,1238,4327
+28,Dell Latitude 7400,43,8,256,3431,3631
+29,Lenovo Legion Y740,5,1,1024,3932,4767
+30,Asus Chromebook Flip C302,75,32,128,1122,3280
+31,Acer Predator Triton 500,56,8,1024,1232,3250
+32,Toshiba Dynabook Satellite Pro,50,8,512,1133,1438
+33,HP ProBook 450,28,4,1024,4983,3872
+34,Dell XPS 15,82,8,256,4351,4728
+35,Lenovo ThinkPad T480,20,1,512,2549,4290
+36,Asus ROG Zephyrus G14,36,1,256,3658,3551
+37,Acer Nitro 5,5,1,256,4413,4929
+38,Apple MacBook Air,43,32,256,2637,3926
+39,Toshiba Dynabook Tecra X40,67,2,1024,3938,1841
+40,HP Spectre Folio,35,16,1024,3016,1268
+41,Dell Inspiron 14,69,8,512,1297,1953
+42,Lenovo Yoga C740,93,32,1024,4233,3961
+43,Asus VivoBook 15,24,8,128,1978,4681
+44,Toshiba Dynabook Portege X30L,96,16,128,2795,3159
+45,HP Pavilion Gaming Laptop,45,2,1024,1842,2646
+46,Dell G5 15,35,8,256,4444,3894
+47,Lenovo ThinkPad X390,98,2,1024,1365,2796
+48,Acer Aspire 3,81,8,1024,2717,1359
+49,Apple Macbook,77,2,256,1312,1005
+50,Toshiba Satellite Pro,70,2,1024,1451,2371
+51,HP EliteBook x360,36,32,256,1231,1857
+52,Dell Precision 7740,8,32,512,1741,4990
+53,Lenovo Ideapad L340,5,32,256,1111,3604
+54,Asus ZenBook Duo,19,32,1024,1897,2434
+55,Acer Chromebook 15,89,2,1024,2222,3818
+56,Apple Macbook Pro 16-inch,60,1,256,3669,2717
+57,HP Envy 13,16,32,128,3333,1843
+58,Dell Alienware Area-51m,7,8,128,3084,1280
+59,Lenovo Legion Y545,29,16,256,2001,4307
+60,Asus TUF Gaming FX505,53,2,128,2391,1368
+61,Acer Swift 7,79,4,128,1821,4169
+62,Apple Macbook Pro 13-inch,64,32,256,1168,2241
+63,Toshiba Portege Z30,67,8,128,5555,4431

@@ -1,16 +1,12 @@
-# This is a sample Python script.
+from src.utils import insert_data_from_csv
+from src.models import Product, PC, Laptop, Printer
+from src.db import create_db_and_tables
+from src.utils import create_csv_with_profitability_ratio
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# create_db_and_tables()
+# insert_data_from_csv(Product, 'products.csv')
+# insert_data_from_csv(PC, "pcs.csv")
+# insert_data_from_csv(Laptop, "laptops.csv")
+# insert_data_from_csv(Printer, "printers.csv")
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+create_csv_with_profitability_ratio("ratio.csv")
