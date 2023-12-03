@@ -34,3 +34,5 @@ and information about the devices:
 
  **Task2**
  - [x] Here I hope that my implementation will be transparent, because I decide to create three independent dataframes, with first, second products and promo price. I belive that this gives better visiualization and user which would like to check results can find very quickly what file presents.
+
+In both cases, I'm trying to achieve future-proof concepts like: not defining just these two sets presents in requirement task, but user can make own sets with for example: PC+LAPTOP. 

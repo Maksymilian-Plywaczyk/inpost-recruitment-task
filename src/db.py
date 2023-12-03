@@ -16,16 +16,28 @@ class Base:
         return {c.key: getattr(self, c.key) for c in inspect(self).mapper.column_attrs}
 
 
-def create_db_and_tables():
+def create_db_and_tables() -> None:
+    """
+    Create all tables in database
+    :return: None
+    """
     Base.metadata.create_all(engine)
 
 
 def get_db() -> Session:
+    """
+    Start new local session for database
+    :return:
+    """
     db = SessionLocal()
     return db
 
 
 def is_database_exists() -> bool:
+    """
+    Check if database already exists, to avoid unnecessary errors
+    :return: True if database already exists, if not return False
+    """
     if database_exists(engine.url):
         return True
     return False
