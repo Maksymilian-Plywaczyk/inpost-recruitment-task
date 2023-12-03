@@ -9,7 +9,6 @@ from sqlalchemy import insert, select
 from sqlalchemy.orm import Session
 from sqlalchemy.sql import func
 
-from src.db import get_db
 from src.models import PC, Laptop, Printer, Product
 
 
