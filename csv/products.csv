@@ -7,8 +7,8 @@ Acer,Acer Aspire 5,Laptop
 Apple,Apple MacBook Pro,Laptop
 Samsung,Samsung Galaxy Book Flex,Laptop
 Toshiba,Toshiba Satellite,Laptop
-Brother,Brother HL-L2380DW,Drukarka
-Epson,Epson EcoTank ET-2720,Drukarka
+Brother,Brother HL-L2380DW,Printer
+Epson,Epson EcoTank ET-2720,Printer
 HP,HP Spectre x360,Laptop
 Dell,Dell Inspiron 15,Laptop
 Lenovo,Lenovo Yoga C940,Laptop
@@ -17,8 +17,8 @@ Acer,Acer Predator Helios 300,Laptop
 Apple,Apple iMac,PC
 Samsung,Samsung Odyssey G9,Monitor
 Toshiba,Toshiba Tecra X50,Laptop
-Brother,Brother MFC-L8900CDW,Drukarka
-Epson,Epson SureColor P800,Drukarka
+Brother,Brother MFC-L8900CDW,Printer
+Epson,Epson SureColor P800,Printer
 HP,HP Envy x360,Laptop
 Dell,Dell Alienware m15,Laptop
 Lenovo,Lenovo Legion Y540,Laptop
@@ -27,8 +27,8 @@ Acer,Acer Chromebook 14,Laptop
 Apple,Apple Mac Mini,PC
 Samsung,Samsung CJ791,Monitor
 Toshiba,Toshiba Portege X30,Laptop
-Brother,Brother HL-L3290CDW,Drukarka
-Epson,Epson WorkForce Pro WF-3720,Drukarka
+Brother,Brother HL-L3290CDW,Printer
+Epson,Epson WorkForce Pro WF-3720,Printer
 HP,HP Omen 15,Laptop
 Dell,Dell Precision 5540,Laptop
 Lenovo,Lenovo Ideapad 330,Laptop
@@ -37,8 +37,8 @@ Acer,Acer Swift 3,Laptop
 Apple,Apple iPad Pro,Tablet
 Samsung,Samsung U32R590,Monitor
 Toshiba,Toshiba Dynabook Tecra A50,Laptop
-Brother,Brother HL-L2350DW,Drukarka
-Epson,Epson Expression Home XP-4100,Drukarka
+Brother,Brother HL-L2350DW,Printer
+Epson,Epson Expression Home XP-4100,Printer
 HP,HP Elite Dragonfly,Laptop
 Dell,Dell Latitude 7400,Laptop
 Lenovo,Lenovo Legion Y740,Laptop
@@ -47,7 +47,7 @@ Acer,Acer Predator Triton 500,Laptop
 Apple,Apple Mac Pro,PC
 Samsung,Samsung UR55,Monitor
 Toshiba,Toshiba Dynabook Satellite Pro,Laptop
-Epson,Epson SureColor SC-P600,Drukarka
+Epson,Epson SureColor SC-P600,Printer
 HP,HP ProBook 450,Laptop
 Dell,Dell XPS 15,Laptop
 Lenovo,Lenovo ThinkPad T480,Laptop
@@ -56,8 +56,8 @@ Acer,Acer Nitro 5,Laptop
 Apple,Apple MacBook Air,Laptop
 Samsung,Samsung Odyssey G7,Monitor
 Toshiba,Toshiba Dynabook Tecra X40,Laptop
-Brother,Brother HL-3170CDW,Drukarka
-Epson,Epson EcoTank ET-2760,Drukarka
+Brother,Brother HL-3170CDW,Printer
+Epson,Epson EcoTank ET-2760,Printer
 HP,HP Spectre Folio,Laptop
 Dell,Dell Inspiron 14,Laptop
 Lenovo,Lenovo Yoga C740,Laptop
@@ -66,8 +66,8 @@ Acer,Acer Predator Orion 9000,PC
 Apple,Apple iMac Pro,PC
 Samsung,Samsung Space Monitor,Monitor
 Toshiba,Toshiba Dynabook Portege X30L,Laptop
-Brother,Brother MFC-J6945DW,Drukarka
-Epson,Epson SureColor P6000,Drukarka
+Brother,Brother MFC-J6945DW,Printer
+Epson,Epson SureColor P6000,Printer
 HP,HP Pavilion Gaming Laptop,Laptop
 Dell,Dell G5 15,Laptop
 Lenovo,Lenovo ThinkPad X390,Laptop
@@ -76,7 +76,7 @@ Acer,Acer Aspire 3,Laptop
 Apple,Apple Macbook,Laptop
 Samsung,Samsung CJ89,Monitor
 Toshiba,Toshiba Satellite Pro,Laptop
-Epson,Epson WorkForce WF-7210,Drukarka
+Epson,Epson WorkForce WF-7210,Printer
 HP,HP EliteBook x360,Laptop
 Dell,Dell Precision 7740,Laptop
 Lenovo,Lenovo Ideapad L340,Laptop
@@ -84,8 +84,8 @@ Asus,Asus ZenBook Duo,Laptop
 Acer,Acer Chromebook 15,Laptop
 Apple,Apple Macbook Pro 16-inch,Laptop
 Samsung,Samsung Odyssey G5,Monitor
-Brother,Brother DCP-L5600DN,Drukarka
-Epson,Epson Expression Premium XP-7100,Drukarka
+Brother,Brother DCP-L5600DN,Printer
+Epson,Epson Expression Premium XP-7100,Printer
 HP,HP Envy 13,Laptop
 Dell,Dell Alienware Area-51m,Laptop
 Lenovo,Lenovo Legion Y545,Laptop
@@ -94,5 +94,5 @@ Acer,Acer Swift 7,Laptop
 Apple,Apple Macbook Pro 13-inch,Laptop
 Samsung,Samsung CRG9,Monitor
 Toshiba,Toshiba Portege Z30,Laptop
-Brother,Brother HL-L2370DW,Drukarka
-Epson,Epson EcoTank ET-4760,Drukarka
+Brother,Brother HL-L2370DW,Printer
+Epson,Epson EcoTank ET-4760,Printer

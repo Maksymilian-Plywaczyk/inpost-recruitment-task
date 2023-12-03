@@ -1,12 +1,15 @@
-from typing import Type, Tuple, List
-from src.models import Product, Laptop, PC, Printer
-from src.db import get_db
 import csv
+import logging
 import os
 from pathlib import Path
-from sqlalchemy import select, insert
+from typing import List, Tuple, Type
+
+import pandas as pd
+from sqlalchemy import insert, select
 from sqlalchemy.sql import func
-import logging
+
+from src.db import get_db
+from src.models import PC, Laptop, Printer, Product
 
 
 def insert_data_into_table(
@@ -25,7 +28,7 @@ def insert_data_into_table(
 
 
 def insert_data_from_csv(
-    table_name: Type[Laptop | PC | Printer], csv_file: str
+    table_name: Type[Laptop | PC | Printer | Product], csv_file: str
 ) -> None:
     """
     Insert data from csv into database table
@@ -48,10 +51,10 @@ def create_csv_with_profitability_ratio(filename: str) -> None:
     :return: None
     """
     root_path = Path(__file__).parent.parent
-    filename_path = os.path.join(root_path, "output", filename)
+    file_path = os.path.join(root_path, "output", filename)
     products = get_all_object_from_product_table()
 
-    with open(filename_path, "w", newline="") as csvfile:
+    with open(file_path, "w", newline="") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=["model", "ratio"])
         writer.writeheader()
         for product in products:
@@ -59,6 +62,25 @@ def create_csv_with_profitability_ratio(filename: str) -> None:
             if data is None:
                 continue
             writer.writerow(data)
+
+
+def create_csv_promo_set(
+    products: Tuple[Type[PC | Printer | Laptop], Type[PC | Printer | Laptop]],
+    filename: str,
+) -> None:
+    root_path = Path(__file__).parent.parent
+    file_path = os.path.join(root_path, "output", filename)
+    data = create_promo_set(products)
+
+    first_product_df = pd.DataFrame([data[products[0].__tablename__]])
+    second_product_df = pd.DataFrame([data[products[1].__tablename__]])
+    promo_price_df = pd.DataFrame([{"promo_price": data["promo_price"]}])
+
+    dataframes_to_add = [first_product_df, second_product_df, promo_price_df]
+
+    with open(file_path, "w", newline="") as csvfile:
+        for dataframe in dataframes_to_add:
+            dataframe.to_csv(csvfile, index=False)
 
 
 def get_profitability_ratio(ram: int, hd: int, price: float, speed: int) -> float:
@@ -80,7 +102,7 @@ def get_profitability_ratio(ram: int, hd: int, price: float, speed: int) -> floa
 
 
 def get_one_object_from_table_by_model(
-    table_name: Type[Laptop | PC | Printer], model: str
+    table_name: Type[Laptop | PC | Printer | Product], model: str
 ) -> Laptop | PC | Printer | None:
     """
     Get one object from given table by model name
@@ -145,7 +167,7 @@ def calculate_profitability_ratio(model: str) -> dict | None:
 
 
 def create_promo_set(
-    promo_set_products: Tuple[Type[Laptop | PC | Printer]]
+    promo_set_products: Tuple[Type[Laptop | PC | Printer], Type[PC | Printer | Laptop]]
 ) -> dict | None:
     """
     Create promo set with products like: (Laptop, PC), (Laptop, Printer)
@@ -153,13 +175,17 @@ def create_promo_set(
     :return: Dict with products of promo set and promo price of products price sum
     """
     first_product = get_random_object_from_table(promo_set_products[0])
+    first_product_type = first_product.__tablename__
     second_product = get_random_object_from_table(promo_set_products[1])
+    second_product_type = second_product.__tablename__
     if first_product is not None and second_product is not None:
-        promo_price = (first_product.price + second_product.price) * 0.9
+        promo_price = round(
+            (float(first_product.price) + float(second_product.price)) * 0.9, 2
+        )
 
         promo_set = {
-            "first_product": first_product.__dict__,
-            "second_product": second_product.__dict__,
+            first_product_type: first_product._asdict(),
+            second_product_type: second_product._asdict(),
             "promo_price": promo_price,
         }
 

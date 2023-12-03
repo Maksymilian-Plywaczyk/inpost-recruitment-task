@@ -1,6 +1,7 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, DECIMAL, CHAR
+from sqlalchemy import CHAR, DECIMAL, Column, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
 from sqlalchemy.types import TypeDecorator
+
 from src.db import Base
 
 
