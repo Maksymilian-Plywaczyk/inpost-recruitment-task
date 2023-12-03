@@ -1,6 +1,5 @@
 from sqlalchemy import create_engine, inspect
-from sqlalchemy.ext.declarative import as_declarative
-from sqlalchemy.orm import Session, sessionmaker
+from sqlalchemy.orm import Session, as_declarative, sessionmaker
 from sqlalchemy_utils import database_exists
 
 engine = create_engine(
